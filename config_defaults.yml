@@ -105,7 +105,6 @@ MAINTAINERS.md:
 Rakefile:
   default_disabled_lint_checks:
   - 'relative'
-  - 'disable_variable_is_lowercase'
 
 spec/spec.opts:
   delete: true
