@@ -1,48 +1,7 @@
 ---
 :global:
   supported_oss:
-    puppetlabs-acl:                          [windows]
-    puppetlabs-chocolatey:                   [windows]
-    puppetlabs-dism:                         [windows]
-    puppetlabs-dsc:                          [windows]
-    puppetlabs-iis:                          [windows]
-    puppetlabs-powershell:                   [windows]
-    puppetlabs-reboot:                       [windows]
-    puppetlabs-registry:                     [windows]
-    puppetlabs-sqlserver:                    [windows]
-    puppetlabs-wsus_client:                  [windows]
-    puppetlabs-inifile:                      [linux,windows]
-    puppetlabs-stdlib:                       [linux,windows]
-    puppetlabs-accounts:                     [linux]
-    puppetlabs-apache:                       [linux]
-    puppetlabs-apt:                          [linux]
-    puppetlabs-concat:                       [linux,windows]
-    puppetlabs-firewall:                     [linux]
-    puppetlabs-haproxy:                      [linux]
-    puppetlabs-hocon:                        [linux]
-    puppetlabs-ibm_installation_manager:     [linux]
-    puppetlabs-inifile:                      [linux]
-    puppetlabs-java:                         [linux]
-    puppetlabs-java_ks:                      [linux]
-    puppetlabs-mongodb:                      [linux]
-    puppetlabs-motd:                         [linux]
-    puppetlabs-mysql:                        [linux]
-    puppetlabs-ntp:                          [linux]
-    puppetlabs-netscaler:                    [linux]
-    puppetlabs-postgresql:                   [linux]
-    puppetlabs-puppet_agent:                 [linux,windows]
-    puppetlabs-rabbitmq:                     [linux]
-    puppetlabs-satellite_pe_tools:           [linux]
-    puppetlabs-stdlib:                       [linux]
-    puppetlabs-tagmail:                      [linux]
-    puppetlabs-tftp:                         [linux]
-    puppetlabs-tomcat:                       [linux]
-    puppetlabs-vcsrepo:                      [linux]
-    puppetlabs-vsphere:                      [linux]
-    puppetlabs-websphere_application_server: [linux]
-    puppetlabs-windows:                      [windows]
-    puppetlabs-xinetd:                       [linux]
-    yang_ietf:                               [linux]
+    puppetlabs-rsync:                       [linux]
 
 .gitattributes:
   include:
@@ -141,28 +100,20 @@ LICENSE:
 
 MAINTAINERS.md:
   maintainers:
-    - "Puppet Forge Modules Team `forge-modules |at| puppet |dot| com`"
-
-# Apache 2 NOTICE file generation.  Please mark unmanaged:true if using puppetpe license type
-NOTICE:
-  copyright_holders:
-    - name: 'Puppet, Inc.'
-      begin: 'latest'
-    # - name: '<name of holder>' (required)
-    #   begin: <year or 'latest'> (optional) (latest is the year when modsync is run)
-    #   end:   <year or 'latest'> (optional) (latest is the year when modsync is run)
+    - "TheMeier at https://github.com/TheMeier"
 
 Rakefile:
   default_disabled_lint_checks:
   - 'relative'
+  - 'disable_variable_is_lowercase'
 
 spec/spec.opts:
   delete: true
 
 locales/config.yaml:
-  copyright_holder: 'Puppet, Inc.'
+  copyright_holder: 'TheMeier'
   comments_tag: 'TRANSLATOR'
-  bugs_address: 'docs@puppet.com'
+  bugs_address: ''
   default_locale: 'en'
   source_files: []
 
