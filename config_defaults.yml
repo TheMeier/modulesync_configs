@@ -34,6 +34,8 @@ Gemfile:
   required:
     ':development':
       # Gems built using puppet-module-gems utility
+      - gem: 'puppet-strings'
+        platforms: 'ruby'
       - gem: 'rspec-puppet-facts'
         platforms: 'ruby'
       - gem: 'puppet-module-posix-default-r#{minor_version}'
